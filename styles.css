@@ -39,6 +39,14 @@ nav.sticky {
   color: #fff;
 }
 
+.saint-mobile {
+  display: none;
+}
+
+.valentine-mobile {
+  display: none;
+}
+
 .saintValentine {
   font-family: 'Source Serif 4';
   font-weight: 700;
@@ -223,23 +231,196 @@ footer {
 
 /* Mobile */
 
-@media screen and (min-width:320px) and (max-width: 480px) {
+/* Mobile S */
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .navbar ul li {
+    display: none;
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 1rem;
+    transition: 0.6s;
+    margin-left: 4em;
+    color: #fff;
+  }
+
+  .saint-mobile {
+    display: block;
+    font-family: 'Source Serif 4';
+    font-weight: 700;
+  }
+
+  .valentine-mobile {
+    display: block;
+    font-family: 'Source Serif 4';
+    font-weight: 500;
+    padding-left: .2em;
+  }
+  
+  .saintValentine {
+    display: none;
+  }
+  
+  .englishInstitute {
     display: none;
   }
 
   .navbar .btn-dropdown {
     display: block;
     color: #fff;
-    margin-left: 7.5em;
-    font-size: 1.7rem;
+    margin-left: 1.9em;
+    font-size: 1.8rem;
     }
 
   .header {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: url(studentcollaborationmed.jpeg) 50%;
-    background-size: cover; 
+    background: url(studentcollaborationmed.jpeg) 30%;
+    background-size: cover;
+  }
+
+  .titleIndex-1 {
+    font-family: 'Source Serif 4';
+    font-weight: 400;
+    font-size: 1.7rem;
+    padding: 5.8em 0 0 .8em;
+    color: #fff;
+    font-style: italic;
+  }
+
+  .mainTitle {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .titleIndex-2 {
+    font-family: 'Source Serif 4';
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 0 0 0 .7em;
+    color: #fff;
+  }
+  
+  .titleIndex-3 {
+    font-family: 'Source Serif 4';
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 0 0 0 .2em;
+    color: #fff;
+  }
+  
+  .btnIndex {
+    margin: 1.5em 0 0 2.7em;
+    width: 10em;
+    height: 3.6em;
+    border: none;
+    background: #F21137;
+    cursor: pointer;
+    font-size: .6em;
+    text-transform: uppercase;
+    color: white;
+    border-radius: .4em;
+  }
+}
+
+/* Mobile M */
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .navbar ul li {
+    display: none;
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 1.1rem;
+    transition: 0.6s;
+    margin-left: 4em;
+    color: #fff;
+  }
+
+  .saint-mobile {
+    display: block;
+    font-family: 'Source Serif 4';
+    font-weight: 700;
+  }
+
+  .valentine-mobile {
+    display: block;
+    font-family: 'Source Serif 4';
+    font-weight: 500;
+    padding-left: .2em;
+  }
+  
+  .saintValentine {
+    display: none;
+  }
+  
+  .englishInstitute {
+    display: none;
+  }
+
+  .navbar .btn-dropdown {
+    display: block;
+    color: #fff;
+    margin-left: 2.8em;
+    font-size: 2rem;
+    }
+
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url(studentcollaborationmed.jpeg) 30%;
+    background-size: cover;
+  }
+
+  .titleIndex-1 {
+    font-family: 'Source Serif 4';
+    font-weight: 400;
+    font-size: 2.3rem;
+    padding: 4.5em 0 0 .7em;
+    color: #fff;
+    font-style: italic;
+  }
+
+  .mainTitle {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .titleIndex-2 {
+    font-family: 'Source Serif 4';
+    font-weight: 700;
+    font-size: 2.4rem;
+    padding: 0 0 0 .7em;
+    color: #fff;
+  }
+  
+  .titleIndex-3 {
+    font-family: 'Source Serif 4';
+    font-weight: 500;
+    font-size: 2.4rem;
+    padding: 0 0 0 .2em;
+    color: #fff;
+  }
+  
+  .btnIndex {
+    margin: 1.5em 0 0 2.7em;
+    width: 10em;
+    height: 3.6em;
+    border: none;
+    background: #F21137;
+    cursor: pointer;
+    font-size: .7em;
+    text-transform: uppercase;
+    color: white;
+    border-radius: .4em;
   }
 }
