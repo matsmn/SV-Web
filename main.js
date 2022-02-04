@@ -1,0 +1,10 @@
+window.onload = function () {
+    const menu_btn = document.querySelector('.btn-dropdown');
+    const sidebar = document.querySelector('.sideMenu');
+
+    menu_btn.addEventListener('click', function () {
+        menu_btn.classList.toggle('is-active');
+        sidebar.classList.toggle('is-active');
+    });
+}
+

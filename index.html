@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Valentine English Institute - Inicio</title>
+    <link rel="stylesheet" href="/SV Web/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Source+Serif+4:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Brand -->
+        <div class="brand">
+            <span class="saintValentine">Saint Valentine</span> 
+            <span class="englishInstitute">English Institute</span>
+        </div>      
+        <!-- Menu -->
+        <ul>
+            <li><a class="nav-link active" aria-current="page" href="/SV Web/index.html">Inicio</a></li>
+            <li><a class="nav-link" href="#">Examenes</a></li>
+            <li><a class="nav-link" href="#">Cursos</a></li>
+            <li><a class="nav-link" href="#">Contacto</a></li>
+            <!-- Dropdown Button -->
+            <a class="btn-dropdown" href="#">&#9776;</a>
+        </ul>
+    </nav>
+    <!-- Sidebar -->
+    <nav class="sideMenu">
+        <ul>
+            <li><a class="nav-link active" aria-current="page" href="/SV Web/index.html">Inicio</a></li>
+            <li><a class="nav-link" href="#">Examenes</a></li>
+            <li><a class="nav-link" href="#">Cursos</a></li>
+            <li><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+        <h1 class="titleIndex-1">Welcome to</h1>
+        <div class="mainTitle">
+            <h1 class="titleIndex-2">Saint</h1>
+            <h1 class="titleIndex-3">Valentine</h1>
+        </div>
+        <button class="btnIndex">Conocé más</button>
+    </header>
+<!--<section>
+        <p class="quienesSomos">Saint Valentine es un grupo de profesoras que en 2021 cumplió 30 años enseñando inglés como segunda lengua en la ciudad de Olavarría.</p>
+        <video class="videoIndex" src="/Saint Valentine Web/media/WhatsApp Video 2021-10-20 at 9.45.50 AM.mp4" autoplay muted loop></video>
+    </section>
+    <section>
+        <h2 class="news">Novedades</h2>
+        <img src="/Saint Valentine Web/media/Kids 1.jpeg" alt="">
+    </section>
+    <footer>Lavalle 2341</footer> -->
+    <!-- Sticky Navbar JS -->
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <!-- Sidebar JS -->
+    <script src="/SV Web/main.js"></script>
+</body>
+</html>
+
+<!-- Sticky Navbar with: Logo with "Saint Valentine" & Dropdown Menu (sidebar, hamburguer & "x" - each link takes you to a different part of the same page)-->
+<!-- Header with: Title, button & background image-->
+<!-- Section (1) with: H3 (About Us), paragraph (Inside a card)-->
+<!-- Section (2) with: H3 (Our Exams), paragraph (Inside a card)-->
+<!-- Section (3) with: H3 (Our Courses), x3 cards with titles & paragraphs-->
+<!-- Section (4) with: H1 (Apply for Admission), subtitle (Applications for March 2023 are now open), paragraph (about our mission with students and how we help them) & button with Whatsapp number to text to-->
+<!-- Section (5) with: H3 (Saint Valentine Events), hr, img, date & month with bottom border, h4 with the name of the event, to and from with clock icon -->
+<!-- Footer with: Paragraph (Address) & social media links with icons--> */

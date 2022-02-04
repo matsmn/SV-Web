@@ -1,0 +1,237 @@
+/* Globals */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Source Serif 4', sans-serif;
+}
+
+body {
+  background-image: linear-gradient (#285185, #2b61ac);
+  background-color: black;
+}
+
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  z-index: 100000;
+  width: 100%;
+  height: 13vh;
+}
+
+nav.sticky {
+  background: #1c1b3b;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 1.2rem;
+  transition: 0.6s;
+  margin-left: 5em;
+  color: #fff;
+}
+
+.saintValentine {
+  font-family: 'Source Serif 4';
+  font-weight: 700;
+}
+
+.englishInstitute {
+  font-family: 'Source Serif 4';
+  font-weight: 400;
+/*   margin-left: -.2em; */
+}
+
+.navbar ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.7em;
+  margin-right: 5em;
+}
+
+.navbar li {
+  position: relative;
+  list-style: none;
+  font-size: 1rem;
+}
+
+.navbar a {
+  position: relative;
+  margin: .5em;
+  text-decoration: none;
+  color: #acadaf;
+  transition: 0.6s;
+  margin: .8em;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 400;
+  padding: .3em;
+}
+
+.navbar .active {
+  color: #fff;
+  border-bottom: solid .3em #F21137;
+}
+
+.navbar .btn-dropdown {
+  display: none;
+}
+
+.sideMenu {
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 100%;
+  width: 50%;
+  min-height: 100vh;
+  z-index: 98; 
+  background-color: #1f1f1f;
+  padding-top: 120px;
+  transition: ease-in-out 0.4s step-end ;
+  transition-property: transform;
+}
+
+.sideMenu.is-active {
+  right: 0;
+}
+
+.sideMenu li {
+  list-style: none;
+}
+
+.sideMenu a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto 16px;
+  padding: 12px 16px;
+  color: #acadaf;
+  text-decoration: none;
+}
+
+.sideMenu .active {
+  color: #fff;
+}
+
+/* Index */
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+/*   background: url(mimi-thian-vdXMSiX-n6M-unsplash.jpg); */
+/*   background: url(Kids_in_class.width-800.jpg); */
+  background: url(studentcollaborationmed.jpeg);
+  background-size: cover;  
+}
+
+
+.titleIndex-1 {
+  font-family: 'Source Serif 4';
+  font-weight: 400;
+  font-size: 3.2rem;
+  padding: 6.6em 0 0 .8em;
+  color: #fff;
+  font-style: italic;
+}
+
+.mainTitle {
+  display: flex;
+  flex-direction: row;
+}
+
+.titleIndex-2 {
+  font-family: 'Source Serif 4';
+  font-weight: 700;
+  font-size: 6rem;
+  padding: 0 0 0 .4em;
+  color: #fff;
+}
+
+.titleIndex-3 {
+  font-family: 'Source Serif 4';
+  font-weight: 500;
+  font-size: 6rem;
+  padding: 0 0 0 .2em;
+  color: #fff;
+}
+
+.btnIndex {
+  margin: 1.5em 0 0 2.7em;
+  width: 9.5em;
+  height: 3.5em;
+  border: none;
+  background: #F21137;
+  cursor: pointer;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: white;
+  border-radius: .4em;
+}
+
+.subtitleIndex {
+  text-align: center;
+  padding: .3em;
+  color: #fff;
+  font-weight: 300;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 2.8em;
+  margin-right: 3em;
+  font-size: 1.1rem;
+}
+
+/* section {
+  text-align: center;
+  padding: .6em;
+}
+
+video {
+  width: 100%;
+  height: 50vh;
+  padding: 0.6em;
+  object-fit: cover;
+  margin-left: -20em;
+}
+
+ .news {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.5em;
+  padding: .6em;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 1.3em;
+  font-size: 1em;
+} */ 
+
+/* Mobile */
+
+@media screen and (max-width: 680px) {
+  .navbar ul li {
+    display: none;
+  }
+
+  .navbar .btn-dropdown {
+    display: block;
+    color: #fff;
+    margin-left: 7.5em;
+    font-size: 1.7rem;
+    }
+}
