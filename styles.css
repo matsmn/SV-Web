@@ -99,7 +99,7 @@ nav.sticky {
   z-index: 98; 
   background-color: #1f1f1f;
   padding-top: 120px;
-  transition: ease-in-out 0.4s step-end ;
+  transition: ease-in-out 0.4s step-end;
   transition-property: transform;
 }
 
@@ -182,7 +182,7 @@ nav.sticky {
   border-radius: .4em;
 }
 
-.subtitleIndex {
+/* .subtitleIndex {
   text-align: center;
   padding: .3em;
   color: #fff;
@@ -192,7 +192,7 @@ nav.sticky {
   margin-left: 2.8em;
   margin-right: 3em;
   font-size: 1.1rem;
-}
+} */
 
 /* section {
   text-align: center;
@@ -223,7 +223,7 @@ footer {
 
 /* Mobile */
 
-@media screen and (max-width: 680px) {
+@media screen and (min-width:320px) and (max-width: 680px) {
   .navbar ul li {
     display: none;
   }
