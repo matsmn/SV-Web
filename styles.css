@@ -93,6 +93,39 @@ nav.sticky {
   border-bottom: solid .3em #F21137;
 }
 
+.hamburger {
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-4px, 3px);
+}
+
+.hamburger.is-active .bar {
+  display: none;
+  transition: 0.5s;
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+
 .navbar .btn-dropdown {
   display: none;
 }
@@ -194,50 +227,34 @@ nav.sticky {
   color: #fff;
 }
 
-.cardQS {
-  display: grid;
-  width: 30%;
-  margin: 0 25em 0 1em;
-  grid-template-columns: 300px;
-  grid-template-rows: 60px 150px 200px;
-  grid-template-areas: "title" "image" "text";
-  box-shadow: 4px 5px 2px 4px rgba(8, 8, 8, 0.9);
-  text-align: center;
-  color: rgb(0, 0, 0);
-  background: #F21137;
-  border-radius: 15px;
+.containerQS {
+  display: flex;
+  flex-direction: row;
 }
 
-.card-title {
-  grid-area: title;
-  padding: 1em 0 0 0;
-  margin-left: -2em;
-  font-size: 1.7rem;
+.red-bg-QS {
+  width: 35%;
+  height: 100vh;
+  background-image: linear-gradient(to right, #980a25, #78091e);
 }
 
-.card-image img {
-  grid-area: image;
-  width: 76.6em;
-/*   height: 21.8em; */
-  padding-top: 2em;
+.red-bg-QS-2 {
+  width: 100%;
+  height: 100vh;
+  background: #78091e;
 }
 
-.card-text {
-  grid-area: text;
-  padding-top: -10em;
+.titleQS {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: 'Source Serif 4';
 }
 
-/* .subtitleIndex {
-  text-align: center;
-  padding: .3em;
-  color: #fff;
+.quienesSomos {
+  font-size: 1rem;
   font-weight: 300;
-  text-align: justify;
-  text-justify: inter-word;
-  margin-left: 2.8em;
-  margin-right: 3em;
-  font-size: 1.1rem;
-} */
+  font-family: 'Poppins';
+}
 
 /* section {
   text-align: center;
