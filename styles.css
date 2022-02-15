@@ -167,9 +167,7 @@ nav.sticky {
 /* INDEX */
 
 .header {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+  position: absolute;
 /*   background: url(mimi-thian-vdXMSiX-n6M-unsplash.jpg); */
 /*   background: url(Kids_in_class.width-800.jpg); */
   background: url(studentcollaborationmed.jpeg);
@@ -721,14 +719,14 @@ footer {
 
   .card-1 {
     display: grid;
-    grid-template-columns: 22em;
+    grid-template-columns: 18em;
     grid-template-rows: 6em 20em 4em;
     grid-template-areas: "blue-1" "text" "stats";
     border-radius: 15px;
     color: #fff;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
-    width: 26%;
+    width: 20%;
     margin: 2em;
     transition: 0.5s ease;
     cursor: default;
@@ -802,14 +800,14 @@ footer {
 
 .card-2 {
   display: grid;
-  grid-template-columns: 22em;
+  grid-template-columns: 18em;
   grid-template-rows: 6em 20em 4em;
   grid-template-areas: "blue-2" "text" "stats";
   border-radius: 15px;
   color: #fff;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
-  width: 26%;
+  width: 20%;
   margin: 2em;
   transition: 0.5s ease;
   cursor: default;
@@ -883,14 +881,14 @@ footer {
 
 .card-3 {
   display: grid;
-  grid-template-columns: 22em;
+  grid-template-columns: 18em;
   grid-template-rows: 6em 20em 4em;
   grid-template-areas: "blue-3" "text" "stats";
   border-radius: 15px;
   color: #fff;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
-  width: 26%;
+  width: 20%;
   margin: 2em;
   transition: 0.5s ease;
   cursor: default;
