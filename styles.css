@@ -655,7 +655,7 @@ footer {
   /* INDEX */
 
   .header {
-    position: fixed;
+    /* position: relative; */
     width: 100%;
     height: 100vh;
     background: url(studentcollaborationmed.jpeg) 30%;
@@ -709,6 +709,7 @@ footer {
   /* SECTION 1 (QUIENES SOMOS) */
 
   .section-1 {
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -719,8 +720,8 @@ footer {
 
   .card-1 {
     display: grid;
-    grid-template-columns: 18em;
-    grid-template-rows: 6em 20em 4em;
+    grid-template-columns: 12em;
+    grid-template-rows: 5em 12em 2.5em;
     grid-template-areas: "blue-1" "text" "stats";
     border-radius: 15px;
     color: #fff;
@@ -800,8 +801,8 @@ footer {
 
 .card-2 {
   display: grid;
-  grid-template-columns: 18em;
-  grid-template-rows: 6em 20em 4em;
+  grid-template-columns: 16em;
+  grid-template-rows: 5em 12em 2.5em;
   grid-template-areas: "blue-2" "text" "stats";
   border-radius: 15px;
   color: #fff;
@@ -881,8 +882,8 @@ footer {
 
 .card-3 {
   display: grid;
-  grid-template-columns: 18em;
-  grid-template-rows: 6em 20em 4em;
+  grid-template-columns: 16em;
+  grid-template-rows: 5em 12em 2.5em;
   grid-template-areas: "blue-3" "text" "stats";
   border-radius: 15px;
   color: #fff;
