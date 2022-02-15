@@ -36,6 +36,22 @@ nav.sticky {
   transition: 0.6s;
   margin-left: 5em;
   color: #fff;
+  cursor: default;
+  animation-name: brand;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+}
+
+@keyframes brand {
+  from {
+      opacity: 0%;
+      transform: translateY(-50px);
+  }
+
+  to {
+      opacity: 100%;
+      transform: translateY(0px);
+  }
 }
 
 .saint-mobile {
@@ -64,6 +80,21 @@ nav.sticky {
   align-items: center;
   padding: 1.7em;
   margin-right: 5em;
+  animation-name: nav;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+}
+
+@keyframes nav {
+  from {
+      opacity: 0%;
+      transform: translateY(-50px);
+  }
+
+  to {
+      opacity: 100%;
+      transform: translateY(0px);
+  }
 }
 
 .navbar li {
@@ -101,7 +132,7 @@ nav.sticky {
   display: block;
   top: 0;
   right: 100%;
-  width: 50%;
+  width: 70%;
   min-height: 100vh;
   z-index: 98; 
   background-color: #1f1f1f;
@@ -153,11 +184,28 @@ nav.sticky {
   padding: 6.6em 0 0 .8em;
   color: #fff;
   font-style: italic;
+  animation-name: welcome-to;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  cursor: default;
+}
+
+@keyframes welcome-to {
+  from {
+      opacity: 0%;
+      transform: translateX(-100px);
+  }
+
+  to {
+      opacity: 100%;
+      transform: translateX(0px);
+  }
 }
 
 .mainTitle {
   display: flex;
   flex-direction: row;
+  cursor: default;
 }
 
 .titleIndex-2 {
@@ -166,6 +214,22 @@ nav.sticky {
   font-size: 6rem;
   padding: 0 0 0 .4em;
   color: #fff;
+  animation-name: saint;
+  animation-iteration-count: 1;
+  animation-duration: 3.5s;
+  cursor: default;
+}
+
+@keyframes saint {
+  from {
+      opacity: 0%;
+      transform: translateX(-500px);
+  }
+
+  to {
+      opacity: 100%;
+      transform: translateX(0px);
+  }
 }
 
 .titleIndex-3 {
@@ -174,6 +238,22 @@ nav.sticky {
   font-size: 6rem;
   padding: 0 0 0 .2em;
   color: #fff;
+  animation-name: saint;
+  animation-iteration-count: 1;
+  animation-duration: 3.5s;
+  cursor: default;  
+}
+
+@keyframes saint {
+  from {
+      opacity: 0%;
+      transform: translateX(-500px);
+  }
+
+  to {
+      opacity: 100%;
+      transform: translateX(0px);
+  }
 }
 
 .btnIndex {
@@ -187,11 +267,36 @@ nav.sticky {
   text-transform: uppercase;
   color: white;
   border-radius: .4em;
+  animation-name: conoce-mas;
+  animation-iteration-count: 1;
+  animation-duration: 3.5s;
+}
+
+@keyframes conoce-mas {
+  from {
+      opacity: -100%;
+      transform: translateY(500px);
+  }
+
+  to {
+      opacity: 100%;
+      transform: translateY(0px);
+  }
+}
+
+.btnIndex:hover {
+  background: #cf1839;
+  transform: scale(105%);
+}
+
+.btnIndex a {
+  text-decoration: none;
+  color: white;
 }
 
 /* SECTION 1 (QUIENES SOMOS) */
 
-.section-1-index {
+.section-1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -212,7 +317,7 @@ nav.sticky {
   width: 26%;
   margin: 2em;
   transition: 0.5s ease;
-  cursor: pointer;
+  cursor: default;
 }
 
 .card-1:hover {
@@ -293,7 +398,7 @@ nav.sticky {
   width: 26%;
   margin: 2em;
   transition: 0.5s ease;
-  cursor: pointer;
+  cursor: default;
 }
 
 .card-2:hover {
@@ -374,7 +479,7 @@ nav.sticky {
   width: 26%;
   margin: 2em;
   transition: 0.5s ease;
-  cursor: pointer;
+  cursor: default;
 }
 
 .card-3:hover {
@@ -568,6 +673,7 @@ footer {
     font-style: italic;
   }
 
+
   .mainTitle {
     display: flex;
     flex-direction: row;
@@ -600,106 +706,6 @@ footer {
     text-transform: uppercase;
     color: white;
     border-radius: .4em;
-  }
-
-  /* SECTION 1 (QUIENES SOMOS) */
-
-  .section-1-index {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-image: linear-gradient(rgb(206, 206, 206), white);
-  }
-
-  /* CARD 1 */
-
-  .card-1 {
-  display: grid;
-  grid-template-columns: 11em;
-  grid-template-rows: 3em 10em 2em;
-  grid-template-areas: "blue-1" "text" "stats";
-  border-radius: 15px;
-  color: #fff;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  text-align: center;
-  width: 26%;
-  margin: 2em;
-  transition: 0.5s ease;
-  cursor: pointer;
-  }
-
-  .card-1:hover {
-  transform: scale(105%);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-  }
-
-  .blue-bg-1 {
-  grid-area: blue-1;
-  background: #1c1b3b;
-  border-radius: 15px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-style: solid;
-  border-bottom-color: #2c2b46;
-  border-bottom-width: .1em;
-  }
-
-  .blue-bg-1 .title-QS {
-  font-size: 1.4rem;
-  padding: 1.5em 2em 2em 2em;
-  text-transform: uppercase;
-  }
-
-  .card-1-text {
-  grid-area: text;
-  padding: 4em 2em 2em 2em;
-  background: linear-gradient(#1c1b3b, #2e2c61);
-  text-align: justify;
-  text-justify: inter-word;
-  }
-
-  .paragraph-QS {
-  line-height: 1cm;
-  }
-
-  .card-1-stats {
-  grid-area: stats;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background: #F21137; 
-  }
-
-  .card-1-stats .stat {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10px;
-  color: white;
-  }
-
-  .card-1-stats .type {
-  font-size: 11px;
-  font-weight: 300;
-  text-transform: uppercase;
-  }
-
-  .card-1-stats .value {
-  font-size: 22px;
-  font-weight: 500;
-  }
-
-  /* CARD 2 */
-
-  .card-2 {
-  display: none;
-  }
-
-  .card-3 {
-  display: none;
   }
 }
 
