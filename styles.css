@@ -515,8 +515,8 @@ footer {
 
   .hamburger {
     display: block;
-    width: 35px;
-    margin-left: 4em;
+    width: 2.6em;
+    margin-left: 6em;
     cursor: pointer;
     appearance: none;
     background: none;
@@ -562,7 +562,7 @@ footer {
     font-family: 'Source Serif 4';
     font-weight: 400;
     font-size: 1.7rem;
-    padding: 9.5em 0 0 .8em;
+    padding: 12em 0 0 .8em;
     color: #fff;
     font-style: italic;
   }
