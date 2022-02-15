@@ -7,10 +7,12 @@
   font-family: 'Poppins', 'Source Serif 4', sans-serif;
 }
 
-body {
+/* body {
   background: #fff;
+  width: 100%;
+  height: 100vh;
 }
-
+ */
 /* NAVBAR */
 
 .navbar {
@@ -710,6 +712,7 @@ footer {
 
   .section-1 {
     /* position: relative; */
+    padding-top: 33.5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -720,15 +723,15 @@ footer {
 
   .card-1 {
     display: grid;
-    grid-template-columns: 12em;
-    grid-template-rows: 5em 12em 2.5em;
+    grid-template-columns: 14em;
+    grid-template-rows: 4em 12em 2.5em;
     grid-template-areas: "blue-1" "text" "stats";
     border-radius: 15px;
     color: #fff;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
-    width: 20%;
-    margin: 2em;
+    width: 70%;
+    margin-left: 3em;
     transition: 0.5s ease;
     cursor: default;
   }
@@ -750,14 +753,15 @@ footer {
   }
 
   .blue-bg-1 .title-QS {
-    font-size: 1.4rem;
-    padding: 1.5em 2em 2em 2em;
+    font-size: 1rem;
+    padding: 1.7em 2em 2em 2em;
     text-transform: uppercase;
   }
 
   .card-1-text {
+    font-size: .6rem;
     grid-area: text;
-    padding: 4em 2em 2em 2em;
+    padding: 0em 4em 2em 4em;
     background: linear-gradient(#1c1b3b, #2e2c61);
     text-align: justify;
     text-justify: inter-word;
@@ -782,182 +786,184 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10px;
+    padding: .2em .2em .2em 1em;
     color: white;
   }
 
   .card-1-stats .type {
-    font-size: 11px;
+    font-size: .5rem;
     font-weight: 300;
     text-transform: uppercase;
   }
 
   .card-1-stats .value {
-    font-size: 22px;
+    font-size: .8rem;
     font-weight: 500;
   }
 
   /* CARD 2 */
 
-.card-2 {
-  display: grid;
-  grid-template-columns: 16em;
-  grid-template-rows: 5em 12em 2.5em;
-  grid-template-areas: "blue-2" "text" "stats";
-  border-radius: 15px;
-  color: #fff;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  text-align: center;
-  width: 20%;
-  margin: 2em;
-  transition: 0.5s ease;
-  cursor: default;
-}
+  .card-2 {
+    display: grid;
+    grid-template-columns: 14em;
+    grid-template-rows: 4em 12em 2.5em;
+    grid-template-areas: "blue-2" "text" "stats";
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    width: 70%;
+    margin-left: 3em;
+    transition: 0.5s ease;
+    cursor: default;
+  }
 
-.card-2:hover {
-  transform: scale(105%);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-}
+  .card-2:hover {
+    transform: scale(105%);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
 
-.blue-bg-2 {
-  grid-area: blue-2;
-  background:#252450;
-  border-radius: 15px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-style: solid;
-  border-bottom-color: #4b4b52;
-  border-bottom-width: .1em;
-}
+  .blue-bg-2 {
+    grid-area: blue-2;
+    background:#252450;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #4b4b52;
+    border-bottom-width: .1em;
+  }
 
-.blue-bg-2 .title-QS {
-  font-size: 1.4rem;
-  padding: 1.5em 2em 1em 2em;
-  text-transform: uppercase;
-}
+  .blue-bg-2 .title-QS {
+    font-size: .9rem;
+    padding: 1.7em 2em 2em 2em;
+    text-transform: uppercase;
+  }
 
-.card-2-text {
-  grid-area: text;
-  padding: 2em 2em 2em 2em;
-  background: linear-gradient(#252450, #2a295b);
-  text-align: justify;
-  text-justify: inter-word;
-}
+  .card-2-text {
+    font-size: .4rem;
+    grid-area: text;
+    padding: 1em 4em 2em 4em;
+    background: linear-gradient(#252450, #2a295b);
+    text-align: justify;
+    text-justify: inter-word;
+  }
 
-.paragraph-QS {
-  line-height: 1cm;
-}
+  .paragraph-QS {
+    line-height: 1cm;
+  }
 
-.card-2-stats {
-  grid-area: stats;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background: #c21636; 
-}
+  .card-2-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #c21636; 
+} 
 
-.card-2-stats .stat {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10px;
-  color: white;
-}
+  .card-2-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: .2em .2em .2em .2em;
+    color: white;
+  }
 
-.card-2-stats .type {
-  font-size: 11px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
+  .card-2-stats .type {
+    font-size: .5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
 
-.card-2-stats .value {
-  font-size: 22px;
-  font-weight: 500;
-}
+  .card-2-stats .value {
+    font-size: .8rem;
+    font-weight: 500;
+  }
 
-/* CARD 3 */
+  /* CARD 3 */
 
-.card-3 {
-  display: grid;
-  grid-template-columns: 16em;
-  grid-template-rows: 5em 12em 2.5em;
-  grid-template-areas: "blue-3" "text" "stats";
-  border-radius: 15px;
-  color: #fff;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  text-align: center;
-  width: 20%;
-  margin: 2em;
-  transition: 0.5s ease;
-  cursor: default;
-}
+  .card-3 {
+    display: grid;
+    grid-template-columns: 14em;
+    grid-template-rows: 4em 12em 2.5em;
+    grid-template-areas: "blue-3" "text" "stats";
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    width: 70%;
+    margin-left: 3em;
+    transition: 0.5s ease;
+    cursor: default;
+  }
 
-.card-3:hover {
-  transform: scale(105%);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-}
+  .card-3:hover {
+    transform: scale(105%);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
 
-.blue-bg-3 {
-  grid-area: blue-3;
-  background:#2a295a;
-  border-radius: 15px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-style: solid;
-  border-bottom-color: #505058;
-  border-bottom-width: .1em;
-}
+  .blue-bg-3 {
+    grid-area: blue-3;
+    background:#2a295a;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #505058;
+    border-bottom-width: .1em;
+  }
 
-.blue-bg-3 .title-QS {
-  font-size: 1.4rem;
-  padding: 1.5em 2em 1em 2em;
-  text-transform: uppercase;
-}
+  .blue-bg-3 .title-QS {
+    font-size: 1rem;
+    padding: 1.3em 2em 2em 2em;
+    text-transform: uppercase;
+  }
 
-.card-3-text {
-  grid-area: text;
-  padding: 2em 2em 2em 2em;
-  background: linear-gradient(#2a295a, #2d2c61);
-  text-align: justify;
-  text-justify: inter-word;
-}
+  .card-3-text {
+    font-size: .4rem;
+    grid-area: text;
+    padding: 1em 4em 1em 4em;
+    background: linear-gradient(#2a295a, #2d2c61);
+    text-align: justify;
+    text-justify: inter-word;
+  }
 
-.paragraph-QS {
-  line-height: 1cm;
-}
+  .paragraph-QS {
+    line-height: 1cm;
+  }
 
-.card-3-stats {
-  grid-area: stats;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background: #78091e; 
-}
+  .card-3-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #78091e; 
+  }
 
-.card-3-stats .stat {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10px;
-  color: white;
-}
+  .card-3-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: .2em .2em .2em 1em;
+    color: white;
+  }
 
-.card-3-stats .type {
-  font-size: 11px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
+  .card-3-stats .type {
+    font-size: .5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
 
-.card-3-stats .value {
-  font-size: 22px;
-  font-weight: 500;
-}
+  .card-3-stats .value {
+    font-size: .8rem;
+    font-weight: 500;
+  }
 }
 
 /* MOBILE M */
