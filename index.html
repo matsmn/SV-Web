@@ -11,39 +11,38 @@
     </style>
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- NAVBAR -->
     <nav class="navbar">
-        <!-- Brand -->
+        <!-- BRAND -->
         <div class="brand">
             <span class="saintValentine">Saint Valentine</span> 
             <span class="englishInstitute">English Institute</span>
-            <!-- Mobile Brand -->
+            <!-- MOBILE BRAND -->
             <span class="saint-mobile">Saint</span> 
             <span class="valentine-mobile">Valentine</span>
         </div>      
-        <!-- Menu -->
+        <!-- MENU -->
         <ul>
             <li><a class="nav-link active" aria-current="page" href="/SV Web/index.html">Inicio</a></li>
             <li><a class="nav-link" href="#">Examenes</a></li>
             <li><a class="nav-link" href="#">Cursos</a></li>
-            <li><a class="nav-link" href="#">Contacto</a></li>
-            <!-- Dropdown Button -->
+            <li><a class="nav-link" href="#">Anotate</a></li>
+            <!-- HAMBURGER -->
             <button class="hamburger">
                 <div class="bar"></div>
             </button>
-            <!-- <a class="btn-dropdown" href="#">&#9776;</a> -->
         </ul>
     </nav>
-    <!-- Sidebar -->
+    <!-- SIDEBAR -->
     <nav class="sideMenu">
         <ul>
             <li><a class="nav-link active" aria-current="page" href="/SV Web/index.html">Inicio</a></li>
             <li><a class="nav-link" href="#">Examenes</a></li>
             <li><a class="nav-link" href="#">Cursos</a></li>
-            <li><a class="nav-link" href="#">Contacto</a></li>
+            <li><a class="nav-link" href="#">Anotate</a></li>
         </ul>
     </nav>
-    <!-- Header -->
+    <!-- HEADER -->
     <header class="header">
         <h1 class="titleIndex-1">Welcome to</h1>
         <div class="mainTitle">
@@ -52,31 +51,89 @@
         </div>
         <button class="btnIndex">Conocé más</button>
     </header>
+    <!-- SECTION 1 (QUIENES SOMOS) -->
     <section class="section-1-index">
-        <div class="containerQS">
-            <div class="red-bg-QS">
-                <h3 class="titleQS">Quienes somos:</h3>
-                <p class="quienesSomos">Saint Valentine es un grupo de profesoras que en 2021 cumplió 30 años enseñando inglés como segunda lengua en la ciudad de Olavarría.</p>
+        <!-- CARD 1 -->
+        <div class="card-1">
+            <div class="blue-bg-1">
+                <h3 class="title-QS">Quienes somos</h3>
             </div>
-            <div class="red-bg-QS-2">
-                
+            <div class="card-1-text">
+                <p class="paragraph-QS">Saint Valentine es un grupo de profesoras que en 2021 cumplió 30 años enseñando inglés como segunda lengua en la ciudad de Olavarría.</p>
             </div>
-        </div>
-            <!-- <img class="imgQS" src="pexels-pixabay-247839.jpg" alt=""> -->
-        
-                     
-        
+            <div class="card-1-stats">
+                <div class="stat">
+                    <div class="value">12</div>
+                    <div class="type">Profesoras</div>
+                </div>
+                <div class="stat">
+                    <div class="value">+100</div>
+                    <div class="type">Alumnos</div>
+                </div>
+                <div class="stat">
+                    <div class="value">31</div>
+                    <div class="type">Años</div>
+                </div>
+            </div>
+        </div>  
+        <!-- CARD 2 -->
+        <div class="card-2">
+            <div class="blue-bg-2">
+                <h3 class="title-QS">Nuestros Examenes</h3>
+            </div>
+            <div class="card-2-text">
+                <p class="paragraph-QS">Preparamos todos los niveles desde Kinder hasta CAE.
+                    Dichos certificados están avalados por certificación nacional e internacional, los cuales son útiles tanto para el ámbito laboral como el académico.</p>
+            </div>
+            <div class="card-2-stats">
+                <div class="stat">
+                    <div class="value">?</div>
+                    <div class="type">?</div>
+                </div>
+                <div class="stat">
+                    <div class="value">17</div>
+                    <div class="type">Certificaciones</div>
+                </div>
+                <div class="stat">
+                    <div class="value">?</div>
+                    <div class="type">?</div>
+                </div>
+            </div>
+        </div> 
+        <!-- CARD 3 -->
+        <div class="card-3">
+            <div class="blue-bg-3">
+                <h3 class="title-QS">Nuestros Cursos</h3>
+            </div>
+            <div class="card-3-text">
+                <p class="paragraph-QS">Nuestros cursos son tanto para niños, como para adolescentes como para adultos. Los niños asisten 2 horas a la semana. Los adolescentes asisten entre 2 y 3 horas a la semana y los adultos 2 horas a la semana.</p>
+            </div>
+            <div class="card-3-stats">
+                <div class="stat">
+                    <div class="value">2h</div>
+                    <div class="type">Semanales</div>
+                </div>
+                <div class="stat">
+                    <div class="value">?</div>
+                    <div class="type">?</div>
+                </div>
+                <div class="stat">
+                    <div class="value">?</div>
+                    <div class="type">?</div>
+                </div>
+            </div>
+        </div>     
     </section>
     <section></section>
     <!-- <footer>Lavalle 2341</footer> -->
-    <!-- Sticky Navbar JS -->
+    <!-- STICKY NAVBAR JS -->
     <script type="text/javascript">
         window.addEventListener("scroll", function(){
             var nav = document.querySelector("nav");
             nav.classList.toggle("sticky", window.scrollY > 0);
         })
     </script>
-    <!-- Sidebar JS -->
+    <!-- SIDEBAR JS -->
     <script src="main.js"></script>
 </body>
 </html>
@@ -89,3 +146,5 @@
 <!-- Section (4) with: H1 (Apply for Admission), subtitle (Applications for March 2023 are now open), paragraph (about our mission with students and how we help them) & button with Whatsapp number to text to-->
 <!-- Section (5) with: H3 (Saint Valentine Events), hr, img, date & month with bottom border, h4 with the name of the event, to and from with clock icon -->
 <!-- Footer with: Paragraph (Address) & social media links with icons-->
+
+
