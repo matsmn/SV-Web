@@ -625,7 +625,7 @@ footer {
   .hamburger {
     display: block;
     width: 2.6em;
-    margin-left: 7em;
+    margin-left: 8em;
     cursor: pointer;
     background: #fff;
     appearance: none;
@@ -732,7 +732,7 @@ footer {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     width: 70%;
-    margin: 2em 2em 2em 2em;
+    margin: 2em 2em 2em 4em;
     transition: 0.5s ease;
     cursor: default;
   }
@@ -814,7 +814,7 @@ footer {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     width: 70%;
-    margin: 4em 2em 2em 2em;
+    margin: 4em 2em 2em 4em;
     transition: 0.5s ease;
     cursor: default;
   }
@@ -896,7 +896,7 @@ footer {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     width: 70%;
-    margin: 4em 2em 2em 2em;
+    margin: 4em 2em 2em 4em;
     transition: 0.5s ease;
     cursor: default;
   }
