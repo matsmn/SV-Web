@@ -7,12 +7,12 @@
   font-family: 'Poppins', 'Source Serif 4', sans-serif;
 }
 
-/* body {
+body {
   background: #fff;
   width: 100%;
   height: 100vh;
 }
- */
+
 /* NAVBAR */
 
 .navbar {
@@ -134,7 +134,7 @@ nav.sticky {
   display: block;
   top: 0;
   right: 100%;
-  width: 70%;
+  width: 60%;
   min-height: 100vh;
   z-index: 98; 
   background-color: #1f1f1f;
@@ -169,11 +169,11 @@ nav.sticky {
 /* INDEX */
 
 .header {
-  position: absolute;
 /*   background: url(mimi-thian-vdXMSiX-n6M-unsplash.jpg); */
 /*   background: url(Kids_in_class.width-800.jpg); */
   background: url(studentcollaborationmed.jpeg);
   background-size: cover; 
+  height: 100vh;
 }
 
 
@@ -301,6 +301,7 @@ nav.sticky {
   flex-direction: row;
   justify-content: space-between;
   background-image: linear-gradient(rgb(206, 206, 206), white);
+  height: 100vh;
 }
 
 /* CARD 1 */
@@ -314,8 +315,9 @@ nav.sticky {
   color: #fff;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
-  width: 26%;
-  margin: 2em;
+  /* width: 26%; */
+  height: 70vh;
+  margin: 8em 0em 2em 2em;
   transition: 0.5s ease;
   cursor: default;
 }
@@ -395,8 +397,9 @@ nav.sticky {
   color: #fff;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
-  width: 26%;
-  margin: 2em;
+  /* width: 26%; */
+  height: 70vh;
+  margin: 8em 0em 2em 2em;
   transition: 0.5s ease;
   cursor: default;
 }
@@ -476,8 +479,9 @@ nav.sticky {
   color: #fff;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
-  width: 26%;
-  margin: 2em;
+  /* width: 26%; */
+  height: 70vh;
+  margin: 8em 2em 2em 2em;
   transition: 0.5s ease;
   cursor: default;
 }
@@ -623,7 +627,7 @@ footer {
     width: 2.6em;
     margin-left: 6em;
     cursor: pointer;
-    color: #fff;
+    background: #fff;
     appearance: none;
     background: none;
     outline: none;
@@ -657,8 +661,6 @@ footer {
   /* INDEX */
 
   .header {
-    /* position: relative; */
-    width: 100%;
     height: 100vh;
     background: url(studentcollaborationmed.jpeg) 30%;
     background-size: cover;
@@ -711,8 +713,7 @@ footer {
   /* SECTION 1 (QUIENES SOMOS) */
 
   .section-1 {
-    /* position: relative; */
-    padding-top: 33.5em;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -723,15 +724,15 @@ footer {
 
   .card-1 {
     display: grid;
-    grid-template-columns: 14em;
+    grid-template-columns: 16em;
     grid-template-rows: 4em 12em 2.5em;
     grid-template-areas: "blue-1" "text" "stats";
-    border-radius: 15px;
+    border-radius: .9em;
     color: #fff;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     width: 70%;
-    margin-left: 3em;
+    margin: 2em 2em 2em 2em;
     transition: 0.5s ease;
     cursor: default;
   }
@@ -744,7 +745,7 @@ footer {
   .blue-bg-1 {
     grid-area: blue-1;
     background: #1c1b3b;
-    border-radius: 15px;
+    border-radius: .9em;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border-bottom-style: solid;
@@ -754,7 +755,7 @@ footer {
 
   .blue-bg-1 .title-QS {
     font-size: 1rem;
-    padding: 1.7em 2em 2em 2em;
+    padding: 1.4em 2em 2em 2em;
     text-transform: uppercase;
   }
 
@@ -805,7 +806,7 @@ footer {
 
   .card-2 {
     display: grid;
-    grid-template-columns: 14em;
+    grid-template-columns: 16em;
     grid-template-rows: 4em 12em 2.5em;
     grid-template-areas: "blue-2" "text" "stats";
     border-radius: 15px;
@@ -813,7 +814,7 @@ footer {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     width: 70%;
-    margin-left: 3em;
+    margin: 4em 2em 2em 2em;
     transition: 0.5s ease;
     cursor: default;
   }
@@ -835,15 +836,15 @@ footer {
   }
 
   .blue-bg-2 .title-QS {
-    font-size: .9rem;
-    padding: 1.7em 2em 2em 2em;
+    font-size: 1rem;
+    padding: 1.4em 2em 2em 2em;
     text-transform: uppercase;
   }
 
   .card-2-text {
-    font-size: .4rem;
+    font-size: .5rem;
     grid-area: text;
-    padding: 1em 4em 2em 4em;
+    padding: 1em 4em 1em 4em;
     background: linear-gradient(#252450, #2a295b);
     text-align: justify;
     text-justify: inter-word;
@@ -887,7 +888,7 @@ footer {
 
   .card-3 {
     display: grid;
-    grid-template-columns: 14em;
+    grid-template-columns: 16em;
     grid-template-rows: 4em 12em 2.5em;
     grid-template-areas: "blue-3" "text" "stats";
     border-radius: 15px;
@@ -895,7 +896,7 @@ footer {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     width: 70%;
-    margin-left: 3em;
+    margin: 4em 2em 2em 2em;
     transition: 0.5s ease;
     cursor: default;
   }
@@ -923,9 +924,9 @@ footer {
   }
 
   .card-3-text {
-    font-size: .4rem;
+    font-size: .5rem;
     grid-area: text;
-    padding: 1em 4em 1em 4em;
+    padding: 0em 4em 1em 4em;
     background: linear-gradient(#2a295a, #2d2c61);
     text-align: justify;
     text-justify: inter-word;
