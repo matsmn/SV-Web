@@ -624,8 +624,8 @@ footer {
 
   .hamburger {
     display: block;
-    width: 2.6em;
-    margin-left: 8em;
+    width: 2.4em;
+    margin-left: 5em;
     cursor: pointer;
     background: #fff;
     appearance: none;
@@ -661,7 +661,7 @@ footer {
   /* INDEX */
 
   .header {
-    height: 100vh;
+    /* height: 100vh; */
     background: url(studentcollaborationmed.jpeg) 30%;
     background-size: cover;
   }
@@ -670,7 +670,7 @@ footer {
     font-family: 'Source Serif 4';
     font-weight: 400;
     font-size: 1.7rem;
-    padding: 12em 0 0 .8em;
+    padding: 10em 0 0 .8em;
     color: #fff;
     font-style: italic;
   }
@@ -732,7 +732,7 @@ footer {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     width: 70%;
-    margin: 2em 2em 2em 4em;
+    margin: 2em 2em 2em 1em;
     transition: 0.5s ease;
     cursor: default;
   }
@@ -814,7 +814,7 @@ footer {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     width: 70%;
-    margin: 4em 2em 2em 4em;
+    margin: 2em 2em 2em 1em;
     transition: 0.5s ease;
     cursor: default;
   }
@@ -896,7 +896,7 @@ footer {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     width: 70%;
-    margin: 4em 2em 2em 4em;
+    margin: 2em 2em 2em 1em;
     transition: 0.5s ease;
     cursor: default;
   }
@@ -1007,8 +1007,8 @@ footer {
 
   .hamburger {
     display: block;
-    width: 35px;
-    margin-left: 80px;
+    width: 1.9em;
+    margin-left: 7.5em;
     cursor: pointer;
     appearance: none;
     background: none;
@@ -1040,17 +1040,8 @@ footer {
     transform: rotate(45deg) translate(-2px, -3px);
   }
 
-  .navbar .btn-dropdown {
-    display: block;
-    color: #fff;
-    margin-left: 2.8em;
-    font-size: 2rem;
-    }
-
   .header {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background: url(studentcollaborationmed.jpeg) 30%;
     background-size: cover;
   }
@@ -1059,7 +1050,7 @@ footer {
     font-family: 'Source Serif 4';
     font-weight: 400;
     font-size: 2.3rem;
-    padding: 4.5em 0 0 .7em;
+    padding: 7.6em 0 0 .7em;
     color: #fff;
     font-style: italic;
   }
@@ -1097,6 +1088,262 @@ footer {
     color: white;
     border-radius: .4em;
   }
+
+    /* SECTION 1 (QUIENES SOMOS) */
+
+    .section-1 {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-image: linear-gradient(rgb(206, 206, 206), white);
+    }
+  
+    /* CARD 1 */
+  
+    .card-1 {
+      display: grid;
+      grid-template-columns: 20em;
+      grid-template-rows: 5em 14em 3em;
+      grid-template-areas: "blue-1" "text" "stats";
+      border-radius: .9em;
+      color: #fff;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+      text-align: center;
+      width: 70%;
+      margin: 2em 2em 2em 1.8em;
+      transition: 0.5s ease;
+      cursor: default;
+    }
+  
+    .card-1:hover {
+      transform: scale(105%);
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    }
+  
+    .blue-bg-1 {
+      grid-area: blue-1;
+      background: #1c1b3b;
+      border-radius: .9em;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-bottom-style: solid;
+      border-bottom-color: #2c2b46;
+      border-bottom-width: .1em;
+    }
+  
+    .blue-bg-1 .title-QS {
+      font-size: 1.2rem;
+      padding: 1.6em 2em 2em 2em;
+      text-transform: uppercase;
+    }
+  
+    .card-1-text {
+      font-size: .8rem;
+      grid-area: text;
+      padding: 1em 4em 2em 4em;
+      background: linear-gradient(#1c1b3b, #2e2c61);
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  
+    .paragraph-QS {
+      line-height: 1cm;
+    }
+  
+    .card-1-stats {
+      grid-area: stats;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      background: #F21137; 
+    }
+  
+    .card-1-stats .stat {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: .2em .2em .2em 1em;
+      color: white;
+    }
+  
+    .card-1-stats .type {
+      font-size: .7rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  
+    .card-1-stats .value {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  
+    /* CARD 2 */
+  
+    .card-2 {
+      display: grid;
+      grid-template-columns: 20em;
+      grid-template-rows: 5em 14em 3em;
+      grid-template-areas: "blue-2" "text" "stats";
+      border-radius: 15px;
+      color: #fff;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+      text-align: center;
+      width: 70%;
+      margin: 2em 2em 2em 1.8em;
+      transition: 0.5s ease;
+      cursor: default;
+    }
+  
+    .card-2:hover {
+      transform: scale(105%);
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    }
+  
+    .blue-bg-2 {
+      grid-area: blue-2;
+      background:#252450;
+      border-radius: 15px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-bottom-style: solid;
+      border-bottom-color: #4b4b52;
+      border-bottom-width: .1em;
+    }
+  
+    .blue-bg-2 .title-QS {
+      font-size: 1.2rem;
+      padding: 1.5em 2em 2em 2em;
+      text-transform: uppercase;
+    }
+  
+    .card-2-text {
+      font-size: .7rem;
+      grid-area: text;
+      padding: 0em 4em 2em 4em;
+      background: linear-gradient(#252450, #2a295b);
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  
+    .paragraph-QS {
+      line-height: 1cm;
+    }
+  
+    .card-2-stats {
+      grid-area: stats;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      background: #c21636; 
+  } 
+  
+    .card-2-stats .stat {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: .2em .2em .2em .2em;
+      color: white;
+    }
+  
+    .card-2-stats .type {
+      font-size: .7rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  
+    .card-2-stats .value {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  
+    /* CARD 3 */
+  
+    .card-3 {
+      display: grid;
+      grid-template-columns: 20em;
+      grid-template-rows: 5em 14em 3em;
+      grid-template-areas: "blue-3" "text" "stats";
+      border-radius: 15px;
+      color: #fff;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+      text-align: center;
+      width: 70%;
+      margin: 2em 2em 2em 1.8em;
+      transition: 0.5s ease;
+      cursor: default;
+    }
+  
+    .card-3:hover {
+      transform: scale(105%);
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    }
+  
+    .blue-bg-3 {
+      grid-area: blue-3;
+      background:#2a295a;
+      border-radius: 15px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-bottom-style: solid;
+      border-bottom-color: #505058;
+      border-bottom-width: .1em;
+    }
+  
+    .blue-bg-3 .title-QS {
+      font-size: 1.2rem;
+      padding: 1.5em 2em 2em 2em;
+      text-transform: uppercase;
+    }
+  
+    .card-3-text {
+      font-size: .7rem;
+      grid-area: text;
+      padding: 0em 4em 2em 4em;
+      background: linear-gradient(#2a295a, #2d2c61);
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  
+    .paragraph-QS {
+      line-height: 1cm;
+    }
+  
+    .card-3-stats {
+      grid-area: stats;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      background: #78091e; 
+    }
+  
+    .card-3-stats .stat {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: .2em .2em .2em 1em;
+      color: white;
+    }
+  
+    .card-3-stats .type {
+      font-size: .7rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  
+    .card-3-stats .value {
+      font-size: 1rem;
+      font-weight: 500;
+    }
 }
 
 /* MOBILE L */
