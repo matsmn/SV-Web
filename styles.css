@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 1.5s;
+  transition: 1s;
   z-index: 100000;
   width: 100%;
   height: 13vh;
@@ -177,7 +177,7 @@ nav.sticky {
 }
 
 
-.titleIndex-1 {
+.title-IX-1 {
   font-family: 'Source Serif 4';
   font-weight: 400;
   font-size: 3.2rem;
@@ -208,7 +208,7 @@ nav.sticky {
   cursor: default;
 }
 
-.titleIndex-2 {
+.title-IX-2 {
   font-family: 'Source Serif 4';
   font-weight: 700;
   font-size: 6rem;
@@ -232,7 +232,7 @@ nav.sticky {
   }
 }
 
-.titleIndex-3 {
+.title-IX-3 {
   font-family: 'Source Serif 4';
   font-weight: 500;
   font-size: 6rem;
@@ -256,7 +256,7 @@ nav.sticky {
   }
 }
 
-.btnIndex {
+.btn-IX {
   margin: 1.5em 0 0 2.7em;
   width: 9.5em;
   height: 3.5em;
@@ -284,12 +284,12 @@ nav.sticky {
   }
 }
 
-.btnIndex:hover {
+.btn-IX:hover {
   background: #cf1839;
   transform: scale(105%);
 }
 
-.btnIndex a {
+.btn-IX a {
   text-decoration: none;
   color: white;
 }
@@ -300,11 +300,29 @@ nav.sticky {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-image: linear-gradient(rgb(206, 206, 206), white);
+  background-image: linear-gradient(rgb(187, 187, 187), white);
   height: 100vh;
 }
 
 /* CARD 1 */
+
+.animation-1 {
+  animation-name: animation-1;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+}
+
+@keyframes animation-1{
+  from {
+      opacity: -100%;
+      transform: translateX(-500px);
+  }
+
+  to {
+      opacity: 100%;
+      transform: translateX(0px);
+  }
+}
 
 .card-1 {
   display: grid;
@@ -388,6 +406,24 @@ nav.sticky {
 
 /* CARD 2 */
 
+.animation-2 {
+  animation-name: animation-2;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+}
+
+@keyframes animation-2{
+  from {
+      opacity: -100%;
+      transform: translateY(500px);
+  }
+
+  to {
+      opacity: 100%;
+      transform: translateY(0px);
+  }
+}
+
 .card-2 {
   display: grid;
   grid-template-columns: 22em;
@@ -470,6 +506,24 @@ nav.sticky {
 
 /* CARD 3 */
 
+.animation-3 {
+  animation-name: animation-3;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+}
+
+@keyframes animation-3{
+  from {
+      opacity: -100%;
+      transform: translateX(500px);
+  }
+
+  to {
+      opacity: 100%;
+      transform: translateX(0px);
+  }
+}
+
 .card-3 {
   display: grid;
   grid-template-columns: 22em;
@@ -550,6 +604,35 @@ nav.sticky {
   font-weight: 500;
 }
 
+/* SECTION 2 (EXAMENES) */
+
+.section-2 {
+  height: 100vh;
+  /* margin-top: 4em; */
+}
+
+.title-EX {
+  font-size: 3rem;
+  color: #1c1b3b;
+  font-weight: 700;
+  text-align: center;
+  cursor: default; 
+}
+
+.paragraph-EX {
+  font-size: 1.2rem;
+  padding: 2em 2em 0em 2em;
+  color: #1c1b3b;
+  cursor: default; 
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.img-EX {
+  width: 100%;
+  object-fit: cover;
+  padding: 4em 0em 2em 0em;
+}
 
 /* section {
   text-align: center;
