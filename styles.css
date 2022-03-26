@@ -1327,7 +1327,7 @@ footer {
     font-size: 12px;
   }
 
-  .container {
+  /* .container {
     grid-template-columns: 1fr;
     grid-template-areas: 
     "header"
@@ -1337,7 +1337,7 @@ footer {
     "section-4"
     "footer";
   }
-
+ */
   .navbar li {
     display: none;
   }
@@ -1453,7 +1453,7 @@ footer {
   }
 
   .header {
-    height: 110vh;
+    height: 100vh;
   }
 
   .title-IX-1 {
