@@ -35,70 +35,40 @@ this.className += " active";
 }
     
 // Add/Delete a class on scroll
-/* window.onscroll = function() {myFunction()};
-function myFunction() { */
+window.onscroll = function() {myFunction()};
+function myFunction() {
   /* Inicio Link */  
   /* if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
-      document.getElementById("inicio").className = "nav-link scroll";
+      document.getElementById("inicio").className = "nav-link";
   } else {
-      document.getElementById("inicio").className = "nav-link scroll active";
+      document.getElementById("inicio").className = "nav-link active";
   } */
   /* Examenes Link */
   /* if (document.body.scrollTop > 751 || document.documentElement.scrollTop > 751) {
-      document.getElementById("examenes").className = "nav-link scrollactive";
+      document.getElementById("examenes").className = "nav-link active";
   } 
   else {
-      document.getElementById("examenes").className = "nav-link scroll";
+      document.getElementById("examenes").className = "nav-link";
   }
   if (document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500) {
-      document.getElementById("examenes").className = "nav-link scroll";
+      document.getElementById("examenes").className = "nav-link";
   }  */
   /* Cursos Link */
   /* if (document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500) {
-      document.getElementById("cursos").className = "nav-link scroll active";
+      document.getElementById("cursos").className = "nav-link active";
   } else {
-      document.getElementById("cursos").className = "nav-link scroll";
+      document.getElementById("cursos").className = "nav-link";
   }
-  if (document.body.scrollTop > 3800 || document.documentElement.scrollTop > 3800) {
-      document.getElementById("cursos").className = "nav-link scroll";
+  if (document.body.scrollTop > 4000 || document.documentElement.scrollTop > 4000) {
+      document.getElementById("cursos").className = "nav-link";
   } */
   /* Anotate Link */
-/*   if (document.body.scrollTop > 3800 || document.documentElement.scrollTop > 3800) {
-      document.getElementById("anotate").className = "nav-link scroll active";
+  /* if (document.body.scrollTop > 4001 || document.documentElement.scrollTop > 4001) {
+      document.getElementById("anotate").className = "nav-link active";
   } else {
-      document.getElementById("anotate").className = "nav-link scroll";
-    }  
-  } */
-
-// Smooth scrolling
-
-$(document).ready(function() {
-  var scrollLink = $('.scroll');
-
-  scrollLink.click(function(e) {
-    e.preventDefault();
-    $('body,html').animate({
-      scrollTop: $(this.hash).offset().top
-    }, 1000 );
-  });
-
-// Active link switching
-  
-$(window).scroll(function() {
-  var scrollbarLocation = $(this).scrollTop();
-
-  scrollLink.each(function() {
-    
-    var sectionOffset = $(this.hash).offset().top
-
-    if ( sectionOffset <= scrollbarLocation ) {
-      $(this).addClass('active');    
-      $(this).siblings().removeClass('active');
-    }
-  })    
-
-  })
-})
+      document.getElementById("anotate").className = "nav-link";
+    } */  
+}
 
 /* OnScroll Animations */
       

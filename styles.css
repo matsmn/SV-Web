@@ -7,16 +7,17 @@
   font-family: 'Poppins', 'Source Serif 4', sans-serif;
 }
 
-body {
+/* body {
   background: #fff;
   width: 100%;
   height: 100vh;
-}
+} */
 
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
+  height: 100vh;
   grid-template-areas: 
   "header header header header header header header header header header header header"
   "section-1 section-1 section-1 section-1 section-1 section-1 section-1 section-1 section-1 section-1 section-1 section-1"
@@ -37,7 +38,7 @@ body {
   transition: 1s;
   z-index: 100000;
   width: 100%;
-  height: 13vh;
+  height: 12vh;
 }
 
 nav.sticky {
@@ -45,6 +46,7 @@ nav.sticky {
 }
 
 .brand {
+  height: 12vh;
   display: flex;
   position: relative;
   transition: 0.6s;
@@ -56,15 +58,12 @@ nav.sticky {
   animation-duration: 2s;
 }
 
-.logo {
-  width: 30%;
-  height: 12vh;
-}
-
 .brand-text {
   display: flex;
   flex-direction: column;
-  padding: 1em 0em 0em 1em;
+  padding: 0em 0em .5em 1em;
+  justify-content: center;
+  align-content: center;
 }
 
 @keyframes brand {
@@ -159,10 +158,10 @@ nav.sticky {
   display: block;
   top: 0;
   right: 100%;
-  width: 60%;
+  width: 100%;
   min-height: 100vh;
   z-index: 98; 
-  background-color: #1f1f1f;
+  background: linear-gradient(to bottom, transparent, #1f1f1f);
   padding-top: 120px;
   transition: ease-in-out 0.4s step-end;
   transition-property: transform;
@@ -170,6 +169,7 @@ nav.sticky {
 
 .sideMenu.is-active {
   right: 0;
+  /* transform: translateX(-50px); */
 }
 
 .sideMenu li {
@@ -181,8 +181,6 @@ nav.sticky {
   width: 100%;
   max-width: 200px;
   text-align: center;
-  margin: 0 auto 16px;
-  padding: 12px 16px;
   color: #acadaf;
   text-decoration: none;
 }
@@ -328,8 +326,15 @@ nav.sticky {
   grid-area: section-1;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(rgb(187, 187, 187), white);
+}
+
+.container-QS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* CARD 1 */
@@ -362,9 +367,9 @@ nav.sticky {
   text-align: center;
   width: 26%;
   height: 70vh;
-  margin: 9em 0em 2em 2em;
   transition: 0.5s ease;
   cursor: default;
+  margin-right: 6em;
 }
 
 .card-1:hover {
@@ -462,9 +467,9 @@ nav.sticky {
   text-align: center;
   width: 26%;
   height: 70vh;
-  margin: 9em 0em 2em 2em;
   transition: 0.5s ease;
   cursor: default;
+  margin-right: 6em;
 }
 
 .card-2:hover {
@@ -562,7 +567,6 @@ nav.sticky {
   text-align: center;
   width: 26%;
   height: 70vh;
-  margin: 9em 2em 2em 2em;
   transition: 0.5s ease;
   cursor: default;
 }
@@ -663,7 +667,7 @@ nav.sticky {
   font-weight: 700;
   text-align: center;
   cursor: default; 
-  padding-top: 2.5em;
+  padding-top: 2em;
 }
 
 .animation-5 {
@@ -727,7 +731,7 @@ nav.sticky {
 }
 
 .title-CR {
-  padding: 2em 0em 1em 0em;
+  padding: 1.5em 0em 1em 0em;
   font-size: 3rem;
   color: #1c1b3b;
   font-weight: 700;
@@ -735,11 +739,12 @@ nav.sticky {
   cursor: default; 
 }
 
-/* .container-CR {
+.container-CR {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-} */
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
 
 /* CARD 4 */
 
@@ -752,7 +757,7 @@ nav.sticky {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
   width: 62%;
-  margin: 0em 0em 4em 15em;
+  margin-bottom: 4em;
   transition: 0.5s ease;
   cursor: default;
 }
@@ -806,7 +811,7 @@ nav.sticky {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
   width: 62%;
-  margin: 0em 0em 4em 15em;
+  margin-bottom: 4em;
   transition: 0.5s ease;
   cursor: default;
 }
@@ -860,7 +865,7 @@ nav.sticky {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
   width: 62%;
-  margin: 0em 0em 4em 15em;
+  margin-bottom: 4em;
   transition: 0.5s ease;
   cursor: default;
 }
@@ -909,7 +914,7 @@ nav.sticky {
   display: flex;
   flex-direction: row;
   background: #202052;
-  margin: 6em 0em 6em 0em;
+  margin: 1em 0em 8em 0em;
 }
 
 .transparent-gradient {
@@ -919,10 +924,12 @@ nav.sticky {
   width: 160%;
 }
 
-/* .section-4-text {
+.section-4-text {
   display: flex;
   flex-direction: column;
-} */
+  justify-content: center;
+  align-content: center;
+}
 
 .title-ANT {
   font-size: 2.5rem;
@@ -992,51 +999,578 @@ footer {
   padding: 0em .3em 0em .3em;
 }
 
-/* DESKTOP: 1200PX*/
-/* LAPTOP: 992PX */
+/* DESKTOP: 1440PX*/
+/* LAPTOP: 1024PX */
 /* TABLET: 768PX */
-/* MOBILE: 576PX */
+/* MOBILE: 480PX */
 
-/* DESKTOP */
+/* LAPTOP */
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1025px) {
+  html {
+    font-size: 14px;
+  }
+
+  .navbar ul {
+    padding-right: 3em;
+  }
+
+  .header {
+    height: 102vh;
+  }
+  
   .title-IX-1 {
-    padding-top: 4em;
+    padding: 5.6em 0 0 .8em;
+  }
+  
+  .card-1 {
+    margin-right: 4em;
   }
 
-  .section-2 {
-    margin-top: 5em;
+  .card-1-stats .stat {
+    padding: 5px;
   }
 
+  .card-2 {
+    margin-right: 4em;
+  }
+
+  .card-2-text {
+    padding-top: .5em;
+  }
+
+  .card-2-stats .stat {
+    padding: 5px;
+  }
+
+  .card-3 {
+    margin-right: 2em;
+  }
+  
+  .card-3-text {
+    padding-top: .5em;
+  }
+
+  .card-3-stats .stat {
+    padding: 5px;
+  }
+
+  .section-3 {
+    margin-bottom: 8em;
+  }
+
+  .card-4 {
+    width: 72%;
+    margin-bottom: 4em;
+
+  }
+
+  .card-5 {
+    width: 72%;
+    margin-bottom: 4em;
+  }
+
+  .card-6 {
+    width: 72%;
+    margin-bottom: 4em;
+  }
+
+  .section-4 {
+    height: 80vh;
+  }
+
+  .transparent-gradient {
+    width: 170%;
+  }
 
 }
 
 /* TABLET */
 
-@media (max-width: 768px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header header header header header header header header header header"
-    "section-1 section-1 section-1 section-1 section-1 section-1 section-1 section-1 section-1 section-1 section-1 section-1"
-    "section-2 section-2 section-2 section-2 section-2 section-2 section-2 section-2 section-2 section-2 section-2 section-2"
-    "section-3 section-3 section-3 section-3 section-3 section-3 section-3 section-3 section-3 section-3 section-3 section-3"
-    "section-4 section-4 section-4 section-4 section-4 section-4 section-4 section-4 section-4 section-4 section-4 section-4"
-    "footer footer footer footer footer footer footer footer footer footer footer footer";
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 12px;
   }
 
-  html {
-    font-size: .9rem;
+  .navbar li {
+    display: none;
   }
+
+  .brand {
+    padding-left: 2em;
+  }
+
+  .brand-text {
+    margin-top: 1.6em;
+    flex-direction: row;
+  }
+
+  .saint-mobile {
+    display: block;
+    font-family: 'Source Serif 4';
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-right: .2em;
+  }
+  
+  .valentine-mobile {
+    display: block;
+    font-family: 'Source Serif 4';
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  
+  .saintValentine {
+    display: none;
+  }
+  
+  .englishInstitute {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 2.8em;
+    margin-right: .5em;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  .hamburger .bar, .hamburger::after, .hamburger::before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4.2px;
+    background-color: #fff;
+    margin: .5em 0em;
+    transition: 0.4s;
+  }
+
+  .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-6px, 2px);
+  }
+
+  .hamburger.is-active .bar {
+    display: none;
+    transition: 0.4s
+  }
+
+  .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-6px, -2px);
+  }
+
+  .sideMenu {
+    /* background: linear-gradient(to right, transparent, #1f1f1f); */
+    background: #1f1f1f;
+    height: 110vh;
+  }
+  
+  .sideMenu.is-active {
+    right: 0;
+    transform: translateY(0px);
+    transition: 0.5s;
+  }
+  
+  .sideMenu a {
+    display: block;
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto 16px;
+    padding: 12px 16px;
+    color: #acadaf;
+    text-decoration: none;
+  }
+  
+  .sideMenu .active {
+    color: #fff;
+  }
+
+  #inicio_mobile {
+    font-size: 1.3rem;
+  }
+  
+  #examenes_mobile {
+    font-size: 1.3rem;
+  }
+  
+  #cursos_mobile {
+    font-size: 1.3rem;
+  }
+  
+  #anotate_mobile {
+    font-size: 1.3rem;
+  }
+
+  .header {
+    height: 105vh;
+  }
+
+  .title-IX-1 {
+    padding: 7.6em 0 0 .8em;
+  }
+
+  .card-1 {
+    grid-template-columns: 20em;
+    grid-template-rows: 6em 20em 4.5em;
+    margin-right: 3em;
+    height: 68vh;
+
+  }
+
+  .card-1:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .card-1-stats .stat {
+    padding: 5px;
+  }
+
+  .card-2 {
+    grid-template-columns: 20em;
+    grid-template-rows: 6em 20em 4.5em;
+    margin-right: 3em;
+    height: 68vh;
+  }
+
+  .card-2:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .blue-bg-2 .title-QS {
+    padding: 1.5em 1em 2em 1em;
+  }
+
+  .card-2-text {
+    padding-top: .5em;
+  }
+
+  .card-2-stats .stat {
+    padding: 5px;
+  }
+
+  .card-3 {
+    grid-template-columns: 20em;
+    grid-template-rows: 6em 20em 4.5em;
+    margin-right: 2.5em;
+    height: 68vh;
+  }
+
+  .card-3:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .card-3-text {
+    padding-top: .5em;
+  }
+
+  .card-3-stats .stat {
+    padding: 5px;
+  }
+
+  .section-2 {
+    height: 190vh;
+  }
+
+  .section-3 {
+    height: 225vh;
+  }
+
+  .card-4 {
+    width: 82.5%;
+  }
+
+  .card-4-text {
+    padding-top: .5em;
+  }
+
+  .card-5 {
+    width: 82.5%;
+  }
+
+  .card-5-text {
+    padding-top: 3.5em;
+  }
+
+  .card-6 {
+    width: 82.5%;
+  }
+
+  .card-6-text {
+    padding-top: 4.5em;
+  }
+
+  .title-ANT {
+    padding: 2em 1em .2em 0em;
+  }
+  
+  .paragraph-ANT {
+    line-height: .8cm;
+  }
+
+  .transparent-gradient {
+    width: 180%;
+  }
+
 }
 
 /* MOBILE */
 
-@media (max-width: 576px) {
+@media screen and (max-width: 481px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "section-1"
+    "section-2"
+    "section-3"
+    "section-4"
+    "footer";
+  }
+
+  .navbar li {
+    display: none;
+  }
+
+  .brand {
+    padding-left: 2em;
+  }
+
+  .brand-text {
+    margin-top: 1.6em;
+    flex-direction: row;
+  }
+
+  .saint-mobile {
+    display: block;
+    font-family: 'Source Serif 4';
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-right: .2em;
+  }
+  
+  .valentine-mobile {
+    display: block;
+    font-family: 'Source Serif 4';
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  
+  .saintValentine {
+    display: none;
+  }
+  
+  .englishInstitute {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 2.8em;
+    margin-right: .1em;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  .hamburger .bar, .hamburger::after, .hamburger::before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4.2px;
+    background-color: #fff;
+    margin: .5em 0em;
+    transition: 0.4s;
+  }
+
+  .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-6px, 2px);
+  }
+
+  .hamburger.is-active .bar {
+    display: none;
+    transition: 0.4s
+  }
+
+  .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-6px, -2px);
+  }
+
+  .sideMenu {
+    /* background: linear-gradient(to right, transparent, #1f1f1f); */
+    background: #1f1f1f;
+    height: 200vh;
+    width: 60%;
+  }
+  
+  .sideMenu.is-active {
+    right: 0;
+    transform: none;
+    transition: none;
+  }
+  
+  .sideMenu a {
+    display: block;
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto 16px;
+    padding: 12px 16px;
+    color: #acadaf;
+    text-decoration: none;
+  }
+  
+  .sideMenu .active {
+    color: #fff;
+  }
+
+  #inicio_mobile {
+    font-size: 1.5rem;
+  }
+  
+  #examenes_mobile {
+    font-size: 1.5rem;
+  }
+  
+  #cursos_mobile {
+    font-size: 1.5rem;
+  }
+  
+  #anotate_mobile {
+    font-size: 1.5rem;
+  }
+
+  .header {
+    height: 190vh;
+  }
+
+  .title-IX-1 {
+    padding: 7.6em 0 0 .8em;
+  }
+
+  .card-1 {
+    grid-template-columns: 20em;
+    grid-template-rows: 6em 20em 4.5em;
+    margin-right: 3em;
+    height: 68vh;
+
+  }
+
+  .card-1:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .card-1-stats .stat {
+    padding: 5px;
+  }
+
+  .card-2 {
+    grid-template-columns: 20em;
+    grid-template-rows: 6em 20em 4.5em;
+    margin-right: 3em;
+    height: 68vh;
+  }
+
+  .card-2:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .blue-bg-2 .title-QS {
+    padding: 1.5em 1em 2em 1em;
+  }
+
+  .card-2-text {
+    padding-top: .5em;
+  }
+
+  .card-2-stats .stat {
+    padding: 5px;
+  }
+
+  .card-3 {
+    grid-template-columns: 20em;
+    grid-template-rows: 6em 20em 4.5em;
+    margin-right: 2.5em;
+    height: 68vh;
+  }
+
+  .card-3:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .card-3-text {
+    padding-top: .5em;
+  }
+
+  .card-3-stats .stat {
+    padding: 5px;
+  }
+
+  .section-2 {
+    height: 190vh;
+  }
+
+  .section-3 {
+    height: 225vh;
+  }
+
+  .card-4 {
+    width: 82.5%;
+  }
+
+  .card-4-text {
+    padding-top: .5em;
+  }
+
+  .card-5 {
+    width: 82.5%;
+  }
+
+  .card-5-text {
+    padding-top: 3.5em;
+  }
+
+  .card-6 {
+    width: 82.5%;
+  }
+
+  .card-6-text {
+    padding-top: 4.5em;
+  }
+
+  .title-ANT {
+    padding: 2em 1em .2em 0em;
+  }
+  
+  .paragraph-ANT {
+    line-height: .8cm;
+  }
+
+  .transparent-gradient {
+    width: 180%;
+  }
 
 }
+
+
+
+
+
 
 
 
